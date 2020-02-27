@@ -1,0 +1,5 @@
+#!/bin/bash
+LOG_PATH='/home/radu/projects/local/ariademur/notes/var/log/internet-latency-test/' # with trailing slash
+LOG_NAME='internet-latency-test'
+PING_HOST='google.com'
+PING_TIME='10'
