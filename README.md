@@ -1,6 +1,6 @@
-# webservco/internet-bandwidth-test
+# webservco/internet-latency-test
 
-Test internet bandwidth using speedtest-cli and write the results in a CSV file.
+Test internet latency using the ping command and write the results in a CSV file.
 
 ---
 
@@ -11,23 +11,16 @@ Test internet bandwidth using speedtest-cli and write the results in a CSV file.
 # create and edit the configuration file
 cp config.sh.dist config.sh && vim config.sh
 # make executable
-chmod +x internet-bandwidth-test.sh
+chmod +x internet-latency-test.sh
 # run manually
-. internet-bandwidth-test.sh
+. internet-latency-test.sh
 ```
 
 ### Cron example
 
 ```sh
-# run every 10 minutes
-*/10 * * * * {PATH}internet-bandwidth-test.sh
+# run every minute
+* * * * * {PATH}internet-latency-test.sh
 ```
 
 ---
-
-## Source credit
-
-https://askubuntu.com/a/597937
-
----
-# webservco/internet-latency-test
