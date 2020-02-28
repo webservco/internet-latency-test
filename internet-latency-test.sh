@@ -49,4 +49,4 @@ fi
 log_time=$(date '+%Y-%m-%dT%H:%M:%S') # log time format
 
 #  Write result in log file
-echo "$log_time,$r_transmitted,$r_received,$r_errors,$r_loss,$r_time,$r_min,$r_avg,$r_max,$r_mdev,$r_message" >> $log_file
+echo "$log_time,$r_transmitted,$r_received,$r_errors,$r_loss,$r_time,$r_min,$r_avg,$r_max,$r_mdev,\"$r_message\"" >> $log_file
