@@ -3,3 +3,4 @@ log_path='/full/path/' # with trailing slash
 log_name='internet-latency-test'
 ping_host='google.com'
 ping_time='10'
+debug=1
