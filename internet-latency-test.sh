@@ -45,7 +45,7 @@ if [ "$debug" = 1 ]; then
 fi
 
 # log full result on error, even if debug disabled
-if [ ( -z "$r_transmitted" ) ]; then
+if [ -z "$r_transmitted" ]; then
     r_message=$(echo "$result")
 fi
 
