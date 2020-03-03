@@ -44,6 +44,11 @@ if [ "$debug" = 1 ]; then
     r_message=$(echo "$result")
 fi
 
+# log full result on error, even if debug disabled
+if [ ( -z "$r_transmitted" ) ]; then
+    r_message=$(echo "$result")
+fi
+
 # If log file doesn't exist yet, write the header line
 if [ ! -f $log_file ]; then
     echo "Date,Transmitted,Received,Errors,Loss,Time,Min,Avg,Max,Mdev,Message" >> $log_file
