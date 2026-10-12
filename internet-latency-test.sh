@@ -7,7 +7,7 @@ p_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )/" # pr
 
 # Check external command
 command -v ping >/dev/null 2>&1 || {
-    echo >&2 "speedtest-cli not installed. Aborting.";
+    echo >&2 "ping not installed. Aborting.";
     return 1;
 }
 
